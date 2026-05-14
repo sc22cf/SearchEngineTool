@@ -24,6 +24,8 @@ The tool has four main components:
 
 ```bash
 # 1. Clone the repository
+git clone https://github.com/sc22cf/SearchEngineTool.git
+cd SearchEngineTool
 
 # 2. (Recommended) Create and activate a virtual environment
 python -m venv venv

@@ -1,6 +1,6 @@
 # Search Engine Tool
 
-A command-line search engine that crawls [https://quotes.toscrape.com/](https://quotes.toscrape.com/), builds an inverted index of every word on every page, and lets users search for single or multi-word queries. Built for the COMP3011 Web Services coursework at the University of Leeds.
+A command-line search engine that crawls [https://quotes.toscrape.com/](https://quotes.toscrape.com/), builds an inverted index of every word on every page, and lets users search for single or multi-word queries.
 
 ## Project Overview
 
@@ -24,8 +24,6 @@ The tool has four main components:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/WebScraper.git
-cd WebScraper
 
 # 2. (Recommended) Create and activate a virtual environment
 python -m venv venv
@@ -307,7 +305,7 @@ python -m pytest -o addopts="" -m benchmark tests/test_benchmark.py -v -s
 ## Project Structure
 
 ```
-WebScraper/
+SearchEngineTool/
 ├── src/
 │   ├── __init__.py
 │   ├── crawler.py          

@@ -288,15 +288,19 @@ The test suite uses **pytest** with `unittest.mock` to mock all HTTP calls (no n
 ```bash
 # Run the full suite with verbose output and coverage report
 python -m pytest tests/ --cov=src --cov-report=term-missing -v
-```
 
+# Run a single test file
+python -m pytest tests/test_search.py -v
+
+# Run the benchmark module (overrides the default 'not benchmark' filter)
+python -m pytest -o addopts="" -m benchmark tests/test_benchmark.py -v -s
+```
 ### Test files
 
 | File | What it covers |
 |------|---------------|
 | `tests/test_crawler.py` | RateLimiter, URL normalisation, BFS traversal, error handling, content deduplication |
 | `tests/test_indexer.py` | Tokenisation, frequency/position tracking, case insensitivity, edge cases |
-| `tests/test_storage.py` | JSON save/load round-trip, missing files, directory creation |
 | `tests/test_search.py` | `print_word`, `find` (single/multi-word, empty, unknown), proximity scoring, suggestions, CLI integration |
 | `tests/test_benchmark.py` | Performance benchmarks for indexing, querying, TF-IDF, proximity, suggestions, and scaling |
 

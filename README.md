@@ -314,7 +314,6 @@ WebScraper/
 │   ├── __init__.py
 │   ├── test_crawler.py
 │   ├── test_indexer.py
-│   ├── test_storage.py
 │   ├── test_search.py
 │   └── test_benchmark.py
 ├── data/
